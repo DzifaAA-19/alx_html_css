@@ -207,3 +207,133 @@ body {
         height: 120px;
     }
 }
+
+
+/* Center title and match Figma spacing */
+.tutorials {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.tutorials .section-title {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.tutorials .section-title .highlight {
+    color: #C271FF;
+    font-weight: 600;
+}
+
+/* Grid */
+.tutorials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Card */
+.tutorial-card {
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Image wrapper */
+.tutorial-image {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.tutorial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+/* Play Button — more Figma-like */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    background: #ffffff;
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button img {
+    width: 28px;
+    opacity: 2;
+}
+
+/* Text below cards */
+.tutorial-content h3 {
+    margin: 15px 0 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tutorial-description {
+    font-size: 15px;
+    color: #707070;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+/* Footer section */
+.tutorial-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+/* Instructor section */
+.instructor-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instructor-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.instructor-name {
+    font-size: 15px;
+    color: #C271FF;
+    font-weight: 600;
+}
+
+/* Rating + time */
+.tutorial-meta {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.tutorial-rating img {
+    height: 16px;
+}
+
+.duration {
+    font-size: 15px;
+    color: #C271FF;
+    font-weight: 600;
+}
+
