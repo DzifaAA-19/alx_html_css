@@ -403,3 +403,62 @@ body {
 .membership .cta-button:hover {
     opacity: 0.85;
 }
+
+.faq {
+    padding: 100px 0;
+    background: #F9F9F9; /* slightly off-white like Figma */
+}
+
+.faq .section-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    letter-spacing: 2px;
+    color: #2D2D2D;
+}
+
+.faq-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    row-gap: 60px;
+}
+
+
+.faq-column {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.faq-item {
+    text-align: left;
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1A1A1A;
+}
+
+.faq-answer {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    max-width: 90%;
+}
+
+@media (max-width: 900px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .faq-answer {
+        max-width: 100%;
+    }
+}
